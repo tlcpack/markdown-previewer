@@ -1,6 +1,8 @@
 # markdown-previewer
 Creating a markdown previewer. Following tutorial at https://blog.logrocket.com/build-a-markdown-previewer-with-vue-and-electron/
 
+Final version can be found at https://zen-payne-2952b4.netlify.app/#/
+
 ## Project setup
 ```
 yarn install
