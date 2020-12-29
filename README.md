@@ -1,4 +1,5 @@
 # markdown-previewer
+Creating a markdown previewer. Following tutorial at https://blog.logrocket.com/build-a-markdown-previewer-with-vue-and-electron/
 
 ## Project setup
 ```
