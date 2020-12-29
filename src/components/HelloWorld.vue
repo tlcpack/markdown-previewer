@@ -7,6 +7,9 @@
         </div>
         <div class="col-md-6">
           <h3>Previewer</h3>
+          <div class="card text-left p-2" :style="styleObject" v-html="content">
+            {{ content }}
+          </div>
         </div>
       </div>
     </div>
@@ -25,15 +28,20 @@
 export default {
   name: "HelloWorld",
   components: {
-    editor: require("vue2-ace-editor")
+    editor: require("vue2-ace-editor"),
   },
   props: {
     msg: String,
   },
   data() {
     return {
+      styleObject: {
+        height: window.innerHeight - 100 + "px",
+        color: "black",
+        overflowY: "auto",
+      },
       content: "",
-      height: window.innerHeight - 100
+      height: window.innerHeight - 100,
     };
   },
   methods: {
@@ -41,7 +49,7 @@ export default {
       require("brace/ext/language_tools");
       require("brace/mode/markdown");
       require("brace/theme/dracula");
-    }
-  }
+    },
+  },
 };
 </script>
